@@ -18,12 +18,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -31,6 +31,8 @@ body {
   color: var(--color-light--2);
   font-weight: 400;
   line-height: 1.6;
+  width: 100%;
+  height: 100vh;
 }
 
 label {
