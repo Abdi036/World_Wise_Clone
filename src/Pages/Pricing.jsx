@@ -14,9 +14,12 @@ export default function Product() {
             Just $9/month.
           </h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
-            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
-            voluptatem iste.
+            {/* Keep unforgatable memories with affordable price.  */}
+            Create unforgettable memories without breaking the bank with
+            WorldWise's affordable pricing. Our budget-friendly options ensure
+            that you can capture every moment of your journey without
+            sacrificing quality or experience. With WorldWise, cherish priceless
+            memories at a price that won't leave a dent in your wallet.
           </p>
         </div>
         <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
