@@ -2,6 +2,7 @@ import CountryItem from "./CountryItem";
 import Spinner from "./Spinner";
 import Message from "./Message";
 import styles from "./CountryList.module.css";
+
 export default function CountryList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
   if (cities.length === 0)
