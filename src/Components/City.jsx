@@ -9,7 +9,9 @@ export default function City() {
   return (
     <div>
       <h1>Country {id}</h1>
-      <h1>Position: {lat} : {lng}</h1>
+      <h1>
+        Position: {lat} : {lng}
+      </h1>
     </div>
   );
 }
