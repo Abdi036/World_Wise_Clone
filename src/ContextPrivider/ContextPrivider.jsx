@@ -8,6 +8,7 @@ const Context = createContext();
 function ContextPrivider({ children }) {
   const [cities, setCity] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [CurrentCity,setCurrentCity] = useState({});
 
   useEffect(() => {
     async function fetchData() {
@@ -25,8 +26,20 @@ function ContextPrivider({ children }) {
     fetchData();
   }, []);
 
+ async function getCity(id){
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${URL}/cities/${id}`);
+      const data = await res.json();
+      setCurrentCity(data);
+    } catch {
+      throw new Error("There is a problem fetching data.");
+    } finally {
+      setIsLoading(false);
+    }
+  }
   return (
-    <Context.Provider value={{ cities, isLoading }}>
+    <Context.Provider value={{ cities, isLoading ,CurrentCity,getCity}}>
       {children}
     </Context.Provider>
   );
@@ -37,4 +50,4 @@ function useCitiesContext() {
     throw new Error("The Context is used out of the Provider Zone!");
   return CitiesContext;
 }
-export { ContextPrivider, useCitiesContext };
+export { ContextPrivider, useCitiesContext};

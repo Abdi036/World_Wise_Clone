@@ -24,15 +24,9 @@ export default function App() {
           <Route path="app" element={<AppLayout />}>
             {/* index is used for displaying initial page  */}
             <Route index element={<Navigate replace to="city" />} />
-            <Route
-              path="city"
-              element={<CityList />}
-            />
+            <Route path="city" element={<CityList />} />
             <Route path="city/:id" element={<City />} />
-            <Route
-              path="country"
-              element={<CountryList  />}
-            />
+            <Route path="country" element={<CountryList />} />
             <Route path="form" element={<Form />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
