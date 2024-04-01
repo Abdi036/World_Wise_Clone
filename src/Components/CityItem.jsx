@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
 import { useCitiesContext } from "../ContextPrivider/ContextPrivider";
 
+// FUNCTION TO FORMAT DATE
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
     day: "numeric",
