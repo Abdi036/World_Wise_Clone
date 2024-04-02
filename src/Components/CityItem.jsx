@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
-import { useCitiesContext } from "../ContextPrivider/ContextPrivider";
+import { useCitiesContext } from "../ContextProvider/ContextProvider";
 
 // FUNCTION TO FORMAT DATE
 const formatDate = (date) =>

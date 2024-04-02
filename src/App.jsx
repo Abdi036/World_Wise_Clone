@@ -10,11 +10,11 @@ import CityList from "./Components/CityList";
 import CountryList from "./Components/CountryList";
 import City from "./Components/City";
 import Form from "./Components/Form";
-import { ContextPrivider } from "./ContextPrivider/ContextPrivider";
+import { ContextProvider } from "./ContextProvider/ContextProvider";
 
 export default function App() {
   return (
-    <ContextPrivider>
+    <ContextProvider>
       <BrowserRouter>
         <Routes>
           <Route index element={<HomePage />} />
@@ -32,6 +32,6 @@ export default function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
-    </ContextPrivider>
+    </ContextProvider>
   );
 }

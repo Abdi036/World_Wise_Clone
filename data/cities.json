@@ -37,99 +37,27 @@
       "id": "98443197"
     },
     {
-      "id": "7a33",
-      "cityName": "Gandia",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-02T12:45:21.167Z",
-      "notes": "pop",
+      "id": "4003",
+      "cityName": "Rome",
+      "country": "Italy",
+      "emoji": "🇮🇹",
+      "date": "2024-04-02T20:12:18.663Z",
+      "notes": "great",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "41.83682786072714",
+        "lng": "12.48046875"
       }
     },
     {
-      "id": "2fdf",
-      "cityName": "Montuiri",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-02T12:47:42.873Z",
-      "notes": "lop",
+      "id": "124a",
+      "cityName": "Marseille",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2024-04-02T20:26:38.877Z",
+      "notes": "mop",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "3c6c",
-      "cityName": "Winsen",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2024-04-02T12:53:40.603Z",
-      "notes": "op",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "3542",
-      "cityName": "Eppendorf",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2024-04-02T12:55:39.088Z",
-      "notes": "lp",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "eeed",
-      "cityName": "Santas Martas",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-02T12:57:01.921Z",
-      "notes": "ok",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "9522",
-      "cityName": "Alboran Sea",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-02T13:06:51.144Z",
-      "notes": "goog",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "0870",
-      "cityName": "Jumilla",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-04-02T13:07:12.106Z",
-      "notes": "wow\n",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
-      }
-    },
-    {
-      "id": "f3e9",
-      "cityName": "Kozhanka",
-      "country": "Ukraine",
-      "emoji": "🇺🇦",
-      "date": "2024-04-02T13:09:32.485Z",
-      "notes": "lm\n",
-      "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "43.29120116988416",
+        "lng": "5.366821289062501"
       }
     }
   ]

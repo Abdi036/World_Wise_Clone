@@ -1,12 +1,11 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 const URL = `http://localhost:8000`;
-
 // 1) CREATING CONTEXT
 const Context = createContext();
 
-function ContextPrivider({ children }) {
-  const [cities, setCity] = useState([]);
+function ContextProvider({ children }) {
+  const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [CurrentCity, setCurrentCity] = useState({});
 
@@ -16,7 +15,7 @@ function ContextPrivider({ children }) {
         setIsLoading(true);
         const res = await fetch(`${URL}/cities`);
         const data = await res.json();
-        setCity(data);
+        setCities(data);
       } catch {
         throw new Error("There is a problem fetching data.");
       } finally {
@@ -38,6 +37,7 @@ function ContextPrivider({ children }) {
       setIsLoading(false);
     }
   }
+
   async function createCity(newCity) {
     try {
       setIsLoading(true);
@@ -45,12 +45,13 @@ function ContextPrivider({ children }) {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
-          "Content-type": "application/json",
+          "Content-Type": "application/json",
         },
       });
 
       const data = await res.json();
-      setCity((cities) => [...cities, data]);
+      setCities((city) => [...city, data]);
+      
     } catch {
       throw new Error("There is a problem fetching data.");
     } finally {
@@ -65,10 +66,11 @@ function ContextPrivider({ children }) {
     </Context.Provider>
   );
 }
+
 function useCitiesContext() {
   const CitiesContext = useContext(Context);
   if (CitiesContext === undefined)
     throw new Error("The Context is used out of the Provider Zone!");
   return CitiesContext;
 }
-export { ContextPrivider, useCitiesContext };
+export { ContextProvider, useCitiesContext };

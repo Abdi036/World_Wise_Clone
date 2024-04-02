@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import BackButton from "./BackButton";
 import styles from "./City.module.css";
 import Spinner from "./Spinner";
-import { useCitiesContext } from "../ContextPrivider/ContextPrivider";
+import { useCitiesContext } from "../ContextProvider/ContextProvider";
 import { useParams } from "react-router-dom";
 
 // FUNCTION TO FORMAT A DATE
