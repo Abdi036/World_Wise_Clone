@@ -32,7 +32,7 @@ function ContextProvider({ children }) {
       const data = await res.json();
       setCurrentCity(data);
     } catch {
-      throw new Error("There is a problem fetching data.");
+      throw new Error("There is a problem getting city data.");
     } finally {
       setIsLoading(false);
     }
@@ -51,16 +51,36 @@ function ContextProvider({ children }) {
 
       const data = await res.json();
       setCities((city) => [...city, data]);
-      
     } catch {
       throw new Error("There is a problem fetching data.");
     } finally {
       setIsLoading(false);
     }
   }
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+
+      setCities((city) => city.filter((c) => c.id !== id));
+    } catch {
+      throw new Error("There is a problem deleting data.");
+    } finally {
+      setIsLoading(false);
+    }
+  }
   return (
     <Context.Provider
-      value={{ cities, isLoading, CurrentCity, getCity, createCity }}
+      value={{
+        cities,
+        isLoading,
+        CurrentCity,
+        getCity,
+        createCity,
+        deleteCity,
+      }}
     >
       {children}
     </Context.Provider>

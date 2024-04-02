@@ -11,8 +11,8 @@ export default function CityList() {
     return <Message message={"Click on the map to add a city or country"} />;
   return (
     <ul className={styles.cityList}>
-      {cities.map((city) => (
-        <CityItem city={city} key={city.id} />
+      {cities.map((city, index) => (
+        <CityItem city={city} key={index} />
       ))}
     </ul>
   );

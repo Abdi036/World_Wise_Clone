@@ -22,7 +22,7 @@ export default function City() {
     function () {
       getCity(id);
     },
-    [id, getCity]
+    [id]
   );
 
   const { cityName, emoji, date, notes } = CurrentCity;
