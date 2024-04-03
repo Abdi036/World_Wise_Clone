@@ -8,7 +8,7 @@ const FAKE_USER = {
 };
 
 const initialValue = {
-  user: null,
+  user: [],
   isAuthenticated: false,
 };
 
@@ -21,6 +21,8 @@ function reducer(state, action) {
 
     case "logout":
       return { ...state, user: null, isAuthenticated: false };
+    case "signup":
+      return { ...state, user: [...state.user, action.payload] };
     default:
       throw new Error("something went wrong.");
   }
@@ -40,9 +42,13 @@ function FakeAuthProvider({ children }) {
   function logout() {
     dispatch({ type: "logout" });
   }
+  function signup(newUser) {
+    const updatedUser = { ...FAKE_USER, ...newUser };
+    dispatch({ type: "signup", payload: updatedUser });
+  }
 
   return (
-    <FakeContextAuth.Provider value={{ login, logout, user, isAuthenticated }}>
+    <FakeContextAuth.Provider value={{ signup,login, logout, user, isAuthenticated }}>
       {children}
     </FakeContextAuth.Provider>
   );

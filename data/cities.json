@@ -37,15 +37,15 @@
       }
     },
     {
-      "id": "e1b7",
-      "cityName": "Mahebourg",
-      "country": "Mauritius",
-      "emoji": "🇲🇺",
-      "date": "2024-04-03T09:27:34.126Z",
-      "notes": "great island",
+      "id": "d1f2",
+      "cityName": "Saldes",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2024-04-03T21:01:35.015Z",
+      "notes": "well",
       "position": {
-        "lat": "-20.406420474920292",
-        "lng": "57.63427734375001"
+        "lat": "42.261049162113856",
+        "lng": "1.7138671875000002"
       }
     }
   ]
