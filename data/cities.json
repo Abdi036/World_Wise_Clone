@@ -25,15 +25,27 @@
       }
     },
     {
-      "id": "4f1a",
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2024-04-03T08:27:16.267Z",
-      "notes": "great\n",
+      "id": "a00a",
+      "cityName": "Nazret",
+      "country": "Ethiopia",
+      "emoji": "🇪🇹",
+      "date": "2024-04-03T09:26:58.364Z",
+      "notes": "cool",
       "position": {
-        "lat": "38.71551876930462",
-        "lng": "-9.129638671875002"
+        "lat": "8.667918002363134",
+        "lng": "39.37500000000001"
+      }
+    },
+    {
+      "id": "e1b7",
+      "cityName": "Mahebourg",
+      "country": "Mauritius",
+      "emoji": "🇲🇺",
+      "date": "2024-04-03T09:27:34.126Z",
+      "notes": "great island",
+      "position": {
+        "lat": "-20.406420474920292",
+        "lng": "57.63427734375001"
       }
     }
   ]
