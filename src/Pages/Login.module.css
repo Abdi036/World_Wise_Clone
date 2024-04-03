@@ -25,14 +25,3 @@
   flex-direction: column;
   gap: 0.5rem;
 }
-
-.btnLink {
-  background-color: var(--color-brand--2);
-  color: var(--color-dark--0);
-  padding: 0.8rem 2rem;
-  border-radius: 7px;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 600;
-}
