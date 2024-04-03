@@ -20,7 +20,7 @@ function reducer(state, action) {
       return { ...state, isAuthenticated: true, user: action.payload };
 
     case "logout":
-      return { ...initialValue };
+      return { ...state, user: null, isAuthenticated: false };
     default:
       throw new Error("something went wrong.");
   }

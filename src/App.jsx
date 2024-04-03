@@ -13,6 +13,7 @@ import CityList from "./Components/CityList";
 import CountryList from "./Components/CountryList";
 import City from "./Components/City";
 import Form from "./Components/Form";
+import ProtectedAuth from "./ProtectedAuth";
 
 export default function App() {
   return (
@@ -24,7 +25,14 @@ export default function App() {
             <Route path="product" element={<Product />} />
             <Route path="pricing" element={<Pricing />} />
             <Route path="login" element={<Login />} />
-            <Route path="app" element={<AppLayout />}>
+            <Route
+              path="app"
+              element={
+                <ProtectedAuth>
+                  <AppLayout />
+                </ProtectedAuth>
+              }
+            >
               {/* index is used for displaying initial page  */}
               <Route index element={<Navigate replace to="city" />} />
               <Route path="city" element={<CityList />} />
