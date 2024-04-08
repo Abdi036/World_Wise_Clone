@@ -44,7 +44,6 @@ export default function App() {
                   </ProtectedAuth>
                 }
               >
-                {/* index is used for displaying initial page  */}
                 <Route index element={<Navigate replace to="city" />} />
                 <Route path="city" element={<CityList />} />
                 <Route path="city/:id" element={<City />} />
